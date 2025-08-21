@@ -1,0 +1,118 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-space text-gray-200 font-orbitron;
+    overflow-y: scroll;
+  }
+}
+
+@layer utilities {
+  .text-glow-blue {
+    text-shadow: 0 0 2px #00f6ff, 0 0 5px #00f6ff;
+  }
+  .text-glow-green {
+    text-shadow: 0 0 2px #39ff14, 0 0 5px #39ff14;
+  }
+}
+
+@layer utilities {
+  .text-glow-blue {
+    text-shadow: 0 0 2px #00f6ff, 0 0 5px #00f6ff;
+  }
+  .text-glow-green {
+    text-shadow: 0 0 2px #39ff14, 0 0 5px #39ff14;
+  }
+
+  /* ADICIONE ESTAS NOVAS LINHAS ABAIXO */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+}
+
+/* ... Cole este código no final do seu arquivo index.css ... */
+
+@layer utilities {
+  /* ... (suas classes text-glow existentes) ... */
+
+  /* ADICIONE ESTAS NOVAS ANIMAÇÕES */
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 0 0 rgba(0, 246, 255, 0.3);
+    }
+    50% {
+      opacity: 0.8;
+      box-shadow: 0 0 10px 5px rgba(0, 246, 255, 0);
+    }
+  }
+
+  @keyframes pulse-glow-icon {
+    0%,
+    100% {
+      color: #9ca3af; /* text-gray-400 */
+      transform: scale(1);
+    }
+    50% {
+      color: #00f6ff; /* text-neon-blue */
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s infinite;
+  }
+
+  .animate-pulse-icon-initial {
+    animation: pulse-glow-icon 2s infinite;
+  }
+}
+
+/* Cole no final do arquivo, dentro de @layer utilities */
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(0, 246, 255, 0.3);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 10px 5px rgba(0, 246, 255, 0);
+  }
+}
+
+@keyframes pulse-glow-icon {
+  0%,
+  100% {
+    color: #9ca3af; /* Cor normal do ícone */
+    transform: scale(1);
+  }
+  50% {
+    color: #00f6ff; /* Cor neon do ícone */
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s infinite;
+}
+
+.animate-pulse-icon-initial {
+  animation: pulse-glow-icon 2s infinite;
+}
