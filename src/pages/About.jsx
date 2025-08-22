@@ -18,7 +18,7 @@ function About() {
           <div className="absolute inset-0 bg-neon-blue/10 rounded-full animate-pulse"></div>
           {}
           <img
-            src="/images/foto01.jpg"
+            src="/images/foto01.JPG"
             className="relative w-full h-full rounded-full border-2 border-neon-blue p-1 object-cover"
           />
         </div>
