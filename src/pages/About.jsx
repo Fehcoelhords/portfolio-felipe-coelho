@@ -16,9 +16,9 @@ function About() {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
         <div className="relative w-40 h-40 md:w-48 md:h-48 flex-shrink-0">
           <div className="absolute inset-0 bg-neon-blue/10 rounded-full animate-pulse"></div>
-          {/* adicionar foto do avatar aqui*/}
+          {}
           <img
-            src="/public/images/foto01.jpg"
+            src="/images/foto01.jpg"
             className="relative w-full h-full rounded-full border-2 border-neon-blue p-1 object-cover"
           />
         </div>
