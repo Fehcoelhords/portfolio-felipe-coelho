@@ -18,7 +18,7 @@ function About() {
           <div className="absolute inset-0 bg-neon-blue/10 rounded-full animate-pulse"></div>
           {/* IMPORTANTE: Coloque sua foto em 'public/assets/avatar.jpg' ou altere o caminho aqui */}
           <img
-            src="images/foto01.jpg"
+            src="public/images/foto01.jpg"
             className="relative w-full h-full rounded-full border-2 border-neon-blue p-1 object-cover"
           />
         </div>

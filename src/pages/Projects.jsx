@@ -4,15 +4,15 @@ import { useSound } from "../hooks/useSound";
 
 function Projects() {
   // Agora cada projeto tem um campo 'link'.
-  // IMPORTANTE: Substitua os '#' pelo link real do seu projeto.
+
   const missions = [
     {
       id: 1,
       name: "Site Corporativo da Omega Recycling Brasil (HTML, CSS, JS, PHP)",
       description:
         "Desenvolvi o site corporativo da Omega Recycling Brasil, empresa de recuperação de plásticos...",
-      imageSrc: "../images/omega.jpg",
-      link: "https://omegarecyclingbrasil.com.br/", // <-- COLOQUE O LINK DO PROJETO AQUI
+      imageSrc: "public/images/omega.jpg",
+      link: "https://omegarecyclingbrasil.com.br/",
     },
 
     {
@@ -20,7 +20,7 @@ function Projects() {
       name: "Site de Escritório de Advocacia",
       description:
         "Desenvolvi um site responsivo para um advogado autônomo, focado em apresentar serviços e capturar leads qualificados...",
-      imageSrc: "../images/advogado.jpg",
+      imageSrc: "public/images/advogado.jpg",
       link: "https://dr.advdavifelixazevedo.com/?fbclid=PAZXh0bgNhZW0CMTEAAac6V03wpHDGwQG2uAxobS4ecIkv4lYowr7RJM0FU38wBQl69bbnMkg-9eDULg_aem_E7_0zzJJnET4_ip1YIUe4g", // <-- COLOQUE O LINK DO PROJETO AQUI
     },
 
@@ -29,8 +29,8 @@ function Projects() {
       name: "Desenvolvedor Full-Stack (Python, Flask, Integração AI)",
       description:
         "Desenvolvi o OrbitIA, um chatbot com IA que automatiza o agendamento para pequenas empresas...",
-      imageSrc: "../images/chat.jpg",
-      link: "https://github.com/Fehcoelhords/orbitia-chatbot", // <-- COLOQUE O LINK DO PROJETO AQUI
+      imageSrc: "public/images/chat.jpg",
+      link: "https://github.com/Fehcoelhords/orbitia-chatbot",
     },
 
     {
@@ -38,8 +38,8 @@ function Projects() {
       name: "Bot de insights de mídia social (Python + APIs + IA)",
       description:
         "Desenvolvi uma ferramenta em Python que usa a IA do Google Gemini para analisar o engajamento no Twitter/X...",
-      imageSrc: "../images/social.jpg",
-      link: "https://github.com/Fehcoelhords/social-media-bot", // <-- COLOQUE O LINK DO PROJETO AQUI
+      imageSrc: "public/images/social.jpg",
+      link: "https://github.com/Fehcoelhords/social-media-bot",
     },
 
     {
@@ -47,8 +47,8 @@ function Projects() {
       name: "Site de Turismo e Camping Responsivo (Python + Flask)",
       description:
         "Atuei no ciclo completo de desenvolvimento (do design à implantação) de um site para uma empresa de turismo...",
-      imageSrc: "../images/praia.jpg",
-      link: "", // <-- COLOQUE O LINK DO PROJETO AQUI
+      imageSrc: "public/images/praia.jpg",
+      link: "",
     },
   ];
 
@@ -104,7 +104,6 @@ function Projects() {
             {/* O botão agora chama a função que abre o link */}
             <button
               onClick={() => handleVerSiteClick(mission.link)}
-              // Desabilitamos o botão se o link for '#'
               disabled={mission.link === "#"}
               className="w-full mt-auto bg-neon-blue/10 text-neon-blue border border-neon-blue py-2 rounded-lg hover:bg-neon-blue hover:text-dark-space font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
