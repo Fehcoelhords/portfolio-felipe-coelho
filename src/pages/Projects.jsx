@@ -11,7 +11,7 @@ function Projects() {
       name: "Site Corporativo da Omega Recycling Brasil (HTML, CSS, JS, PHP)",
       description:
         "Desenvolvi o site corporativo da Omega Recycling Brasil, empresa de recuperação de plásticos...",
-      imageSrc: "public/images/omega.jpg",
+      imageSrc: "/public/images/omega.jpg",
       link: "https://omegarecyclingbrasil.com.br/",
     },
 
@@ -20,7 +20,7 @@ function Projects() {
       name: "Site de Escritório de Advocacia",
       description:
         "Desenvolvi um site responsivo para um advogado autônomo, focado em apresentar serviços e capturar leads qualificados...",
-      imageSrc: "public/images/advogado.jpg",
+      imageSrc: "/public/images/advogado.jpg",
       link: "https://dr.advdavifelixazevedo.com/?fbclid=PAZXh0bgNhZW0CMTEAAac6V03wpHDGwQG2uAxobS4ecIkv4lYowr7RJM0FU38wBQl69bbnMkg-9eDULg_aem_E7_0zzJJnET4_ip1YIUe4g", // <-- COLOQUE O LINK DO PROJETO AQUI
     },
 
@@ -29,7 +29,7 @@ function Projects() {
       name: "Desenvolvedor Full-Stack (Python, Flask, Integração AI)",
       description:
         "Desenvolvi o OrbitIA, um chatbot com IA que automatiza o agendamento para pequenas empresas...",
-      imageSrc: "public/images/chat.jpg",
+      imageSrc: "/public/images/chat.jpg",
       link: "https://github.com/Fehcoelhords/orbitia-chatbot",
     },
 
@@ -38,7 +38,7 @@ function Projects() {
       name: "Bot de insights de mídia social (Python + APIs + IA)",
       description:
         "Desenvolvi uma ferramenta em Python que usa a IA do Google Gemini para analisar o engajamento no Twitter/X...",
-      imageSrc: "public/images/social.jpg",
+      imageSrc: "/public/images/social.jpg",
       link: "https://github.com/Fehcoelhords/social-media-bot",
     },
 
@@ -47,7 +47,7 @@ function Projects() {
       name: "Site de Turismo e Camping Responsivo (Python + Flask)",
       description:
         "Atuei no ciclo completo de desenvolvimento (do design à implantação) de um site para uma empresa de turismo...",
-      imageSrc: "public/images/praia.jpg",
+      imageSrc: "/public/images/praia.jpg",
       link: "",
     },
   ];
